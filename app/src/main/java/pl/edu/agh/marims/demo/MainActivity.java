@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int MAX_BITMAP_CACHE_SIZE = 3;
     private LinkedHashMap<Integer, Bitmap> bitmapCache = new LinkedHashMap<Integer, Bitmap>(MAX_BITMAP_CACHE_SIZE) {
+        /**
+         * This should return true when the max bitmap cache size has been exceeded
+         * @param eldest the eldest entry in cache
+         * @return whether or not to remove the entry from cache
+         */
         @Override
         protected boolean removeEldestEntry(Entry<Integer, Bitmap> eldest) {
             return false;
