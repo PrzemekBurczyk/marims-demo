@@ -29,6 +29,20 @@
 
         </android.support.design.widget.TextInputLayout>
 
+        <Button
+            android:id="@+id/toggleImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/toggle_image" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
 
         <TextView
             android:layout_width="400dp"
